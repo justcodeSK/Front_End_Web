@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="magicbox.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="maindiv">
+        <h1>Magicbox</h1>
+        <table class="table table-bordered">
+            <tbody>
+                <form action="">
+                    <tr>
+                        <td> 
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="one" placeholder="17" name="pswd">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mb-3">
+ 
+                                <input type="text" class="form-control" id="two" placeholder="10" name="pswd">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mb-3">
+ 
+                                <input type="text" class="form-control" id="three" placeholder="15" name="pswd">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <div class="mb-3">
+
+                                <input type="text" class="form-control" id="four" placeholder="12" name="pswd">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mb-3">
+ 
+                                <input type="text" class="form-control" id="five" placeholder="14" name="pswd">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mb-3">
+ 
+                                <input type="text" class="form-control" id="six" placeholder="16" name="pswd">
+                            </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <div class="mb-3">
+ 
+                                <input type="text" class="form-control" id="seven" placeholder="13" name="pswd">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mb-3">
+ 
+                                <input type="text" class="form-control" id="eight" placeholder="18" name="pswd">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="mb-3">
+
+                                <input type="text" class="form-control" id="nine" placeholder="11" name="pswd">
+                            </div>
+                        </td>
+                      </tr>
+                </form>
+            </tbody>
+          </table>
+
+        <div class="d-grid">
+            <button type="button" class="btn btn-success btn-lg"  id="check" data-bs-toggle="collapse" data-bs-target="#demo">Check</button>
+        </div>
+          <p id="msg"></p>
+    </div>
+<script>
+$(document).ready(function(){ 
+    $('#msg').hide(); 
+   
+
+    $("#check").click(function(){
+        magic_box()
+    });
+    $("#check").click(function(){
+        not_equal()
+    });
+    
+ });
+
+
+
+ function not_equal(){
+    let one = $('#one').val() 
+    let two = $('#two').val()
+    let three = $('#three').val()
+    let four = $('#four').val()
+    let five = $('#five').val()
+    let six = $('#six').val()
+    let seven = $('#seven').val()
+    let eight = $('#eight').val()
+    let nine = $('#nine').val()
+    
+    let box=[one,two,three,four,five,six,seven,eight,nine]
+
+      let pos = 0, nbox = [];
+      var length = box.length;
+         for (let i = 0; i < length - 1; i++) {
+            for (let j = i + 1; j < length; j++) {
+            if (box[i] === box[j]) {
+                nbox[pos] = box[i];
+                  pos++;
+               }
+            }
+         }
+    if(nbox.length > 0){
+        $('#msg').fadeIn()
+        $('#msg').html("***Input contains an equal !"); 
+        $('#msg').css('color','red');
+     }
+         
+}
+ 
+
+ function magic_box(){
+    let sone = $('#one').val() 
+    let stwo = $('#two').val()
+    let sthree = $('#three').val()
+    let sfour = $('#four').val()
+    let sfive = $('#five').val()
+    let ssix = $('#six').val()
+    let sseven = $('#seven').val()
+    let seight = $('#eight').val()
+    let snine = $('#nine').val()
+
+    let one = Number(sone);
+    let two = Number(stwo);
+    let three = Number(sthree);
+    let four = Number(sfour);
+    let five = Number(sfive);
+    let six = Number(ssix);
+    let seven = Number(sseven);
+    let eight = Number(seight);
+    let nine = Number(snine);
+
+                let x = one+two+three;
+                let y = four+five+six;
+                let z = seven+eight+nine;
+
+                let p = one+four+seven;
+                let q = two+five+eight;
+                let r = three+six+nine;
+
+                let u =one+five+nine;
+                let v = three+five+seven;
+
+
+                if(x == y && x == z && x == p && x == q && x == r && x == u && x == v){
+                    console.log(x,y,z,p,q,r,u,v)
+                    $('#msg').show();
+                    $('#msg').html("It is a Magic box");
+                    $('#msg').css('color','green'); 
+                }else if(x != y || x != z || x != p || x != q || x != r || x != u || x != v){
+                    $('#msg').fadeIn()
+                    $('#msg').html("***It is not a Magic Box!"); 
+                    $('#msg').css('color','red');
+                }
+ }
+
+ 
+</script>
+</body>
+</html>

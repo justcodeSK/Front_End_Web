@@ -1,0 +1,36 @@
+#maindiv{
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 40px 40px 60px 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
+.form-control{
+    border: none;
+    padding: 40px;
+}
+table{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+input[type="text"]
+{
+    font-size:30px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-bottom: 20px;
+    font-size: 50px;
+
+}
+.btn{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    font-size: 200px;
+    font-size: 30px;
+}
+p{
+    font-size: 40px;
+}
