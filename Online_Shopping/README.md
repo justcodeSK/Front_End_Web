@@ -61,10 +61,10 @@ shopping-site/
 
 ---
 
-## ▶️ How to Run
+## How to Run
 1. Clone or download the repository:
    ```bash
-   git clone https://github.com/your-username/shopping-site.git
+   git clone https://github.com/justcodeSK/Front_End_Web/Online_Shopping.git
 2. Open index.html in a browser.
 
 3. Browse products and add them to the cart.
