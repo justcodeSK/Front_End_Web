@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="shopping.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse bg-dark navbar-light" id="nav1">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand text-light" href="home.html">Home</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><i class="fas fa-shopping-cart text-light" id="carttoggle"></i></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+          <div id="cartnav">
+            <nav class="navbar navbar-inverse bg-dark navbar-light text-light" id="nav2">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  My Cart
+                </div>
+                <ul class="nav navbar-nav navbar-right d-inline">
+                  <h4 style="display: inline;"><span class="item-in-cart-count">0</span><i class="fas fa-shopping-cart text-light"></i></h4>
+                  <button class="btn btn-danger ml-3" id="clearall">Clear All</button>
+                </ul>
+              </div>
+            </nav>
+              <div>
+              </div>
+          <div id="cart">
+    
+          </div>
+          <div class="total position-sticky py-3 bg-white" style="bottom: 0; margin-top: 20px;">
+    
+          </div>
+          <a type="button" class="btn btn-dark btn-lg w-100" id="checkout">CHECKOUT</a>
+      </div>
+
+
+
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-10">
+            <div class="">
+                <div class="row">
+                  <div id="maindiv" class="card-columns">   
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+<script src="shopping.js"></script>
+
+   
+
+</script>
+
+</body>
+</html>

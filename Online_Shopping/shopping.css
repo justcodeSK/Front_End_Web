@@ -1,0 +1,89 @@
+#nav1{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: black;
+}
+#nav2{
+    z-index: 1;
+    
+    background-color: black;
+}
+.product{
+    border:none !important;
+}
+.product img{
+    height: 150px;
+    width: auto;
+    margin-bottom: -50px;
+    margin-left: 1rem;
+    transition: 0.5s;
+}
+.product .card-title{
+    margin-top: 50px;
+}
+
+.img-in-cart{
+    height: 50px;
+}
+.overflow-scroll{
+    overflow: scroll;
+}
+  #namehead {
+    color: white;
+    font-family: 'Acme', sans-serif;
+    margin-left: 120px;
+    margin-top: 0px;
+    font-size: 28px;
+  }
+ 
+  #home{
+    margin-top: -21px;
+    color: white;
+    font-family: 'Acme', sans-serif;
+    text-decoration: none;
+  }
+  #hom1 {
+    color: white;
+    margin-top: -700px;
+    margin-right: 84px;
+    margin-left: 634px;
+    font-size: 40px;
+  }
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    margin-top: 20px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  #cartnav{
+    background-color: rgba(18, 17, 19, 0.233);
+    padding: 20px;
+    border-radius: 10px;
+    padding-top: 100px;
+    width: 30%;
+    float: right;
+  }
+  #maindiv{
+    padding-top: 50px;
+  }
+  
